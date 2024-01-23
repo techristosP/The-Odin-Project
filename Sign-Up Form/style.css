@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf');
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.cover {
+    background-image: url(fjord.jpeg);
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    width: 45vw;
+    height: 100vh;
+
+    display: flex;
+    /* align-items: center; */
+}
+
+.logo {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    top: 35%;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.top {
+    /* background-color: whitesmoke; */
+    font-weight: bold;
+    padding: 100px 250px 50px 40px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.form {
+    background-color: white;
+    padding: 20px 250px 50px 40px;
+    /* display: flex; */
+
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    position: top;
+}
+
+.inputs {
+    display: flex;
+    gap: 90px;
+
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input_field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#error_msg {
+    color: red;
+    font-size: 12px;
+}
+
+.bottom {
+    padding: 40px 250px 50px 40px;
+}
+
+#button {
+    background-color: rgb(90, 121, 29);
+    color: white;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+#button.disabled {
+    background-color: rgb(90, 121, 29, 0.5);
+    color: white;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+#login {
+    color: rgb(90, 121, 29)
+}
+
+#fjord {
+    color: white;
+    font-size: 50px;
+}
+
+#italics {
+    font-style: italic;
+}

@@ -1,0 +1,59 @@
+.container {
+    background-color: whitesmoke;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around;
+    align-items: space-around;   */
+    /* gap: 10px; */
+    margin: 50px auto;
+}
+
+.row {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* margin: 10px; */
+    /* align-items: center; */
+    /* gap: 10px; */
+    /* /* flex-wrap: wrap; */
+}
+
+.cell {
+    /* width: 30px;
+    height: 30px; */
+
+    border-color: black;
+    border-width: 0 0.5px 0.5px 0;
+    border-style: solid;
+    /* border-style: outset; */
+    /* margin: 1px; */
+}
+
+button {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(48, 14, 104);
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: larger;
+    border-width: 0px;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    color: rgb(48, 14, 104);
+}
+
+.clicked {
+    background-color: whitesmoke;
+    color: rgb(48, 14, 104);
+}
+
+body {
+    text-align: center;
+    background-color: gray;
+}

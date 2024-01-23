@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign-up form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="cover">
+        <div class="logo">
+            <img src="odin-lined.png" alt="odin-logo">
+            <span id="fjord">SOGNEFJORD</span>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="top">
+            <p>This is not a real online service. You know you need something like this in your life to help you realize
+                your deepest dreams. Sign up <span id="italics">now</span> to get started.</p>
+            <p>You <span id="italics">know</span> you want to.</p>
+        </div>
+
+        <div class="form">
+            <form method="post" id="inner_form">
+                <legend>Let's do this!</legend>
+
+                <div class="inputs">
+                    <div class="left">
+                        <div class="input_field">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" onkeyup="checkPassword()" required>
+                            <span id="error_msg"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="right">
+                        <div class="input_field">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" namae="last_name" id="last_name" required>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" name="phone_number" id="phone_number" required>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_password" id="confirm_password" onkeyup="checkPassword()" required>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="bottom">
+            <button type="submit" id="button" class="disabled">Create Account</button>
+            <p>Already have an account? <span id="login">Log in</span></p>
+        </div>
+    </div>
+</body>
+
+</html>

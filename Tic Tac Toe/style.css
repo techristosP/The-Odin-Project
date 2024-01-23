@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf');
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: gray;
+    text-align: center;
+}
+
+#title {
+    font-size: 50px;
+    color: whitesmoke;
+    margin: 20px auto 10px auto;
+}
+
+.control {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.canvas {
+    background-color: whitesmoke;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* gap: 4px; */
+    /* justify-content: space-around;
+    align-items: space-around;   */
+    /* gap: 10px; */
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+input {
+    width: 10%;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    border-width: 0px;
+    border-radius: 5px;
+    
+}
+
+button {
+    width: auto;
+    height: auto;
+    /* margin-top: 30px; */
+    padding: 10px;
+    background-color: rgb(48, 14, 104);
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: larger;
+    border-width: 0px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: bold;
+    border: 1px solid black;
+    color: rgb(48, 14, 104);
+}
+
+.game-over {
+    color: rgb(48, 14, 104);
+    align-items: center;
+    font-size: 50px;
+}
+
